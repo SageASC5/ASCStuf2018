@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+}
+
+html{
+    background-color: powderblue;
+    text-align: center
+}
+
+#OneTwo {
+    
+}
+
+#One {
+    margin: auto;
+    border: 3px solid black;
+    width: 50%
+    
+}
+
+#Two {
+    margin: auto;
+    border: 3px solid black;
+    width: 50%
+}
+
+
+#Three {
+    margin: auto;
+    border: 3px solid black;
+    width: 50%
+}
+
+#Four {
+    margin: auto;
+    border: 3px solid black;
+    width: 50%
+}
+
+#Five {
+    margin: auto;
+    border: 3px solid black;
+    width: 50%
+}
+
+#Six {
+    margin: auto;
+    border: 3px solid black;
+    width: 50%
+
+}
