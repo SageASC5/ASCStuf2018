@@ -1,7 +1,7 @@
 /*function preload(){
     img = loadImage("https://img.pokemondb.net/sprites/x-y/normal/squirtle.png")
 } */
-
+ 
 function setup(){
     createCanvas(1350,750)
     rect(342,480,80,30)
@@ -14,15 +14,15 @@ let health2 = 208
 let color = "green"
 let color2 = "green"
 
-let bubblePP = 15
-let withdrawPP = 8
-let hydroPumpPP = 2
-let splashPP = 100
+let bubblePP = 20
+let withdrawPP = 10
+let hydroPumpPP = 4
+let splashPP = 300
 
-let flamethrowerPP = 2
-let smokescreenPP = 4
-let emberPP = 15 
-let growlPP = 4
+let flamethrowerPP = 3
+let smokescreenPP = 6
+let emberPP = 20 
+let growlPP = 6
 
 let healing = 0
 
@@ -96,9 +96,9 @@ function mouseClicked(){
     let accuracyGrowl = Math.ceil(Math.random()*10)
 
     let damageBubble = 30
-    let damageHydroPump = 75
+    let damageHydroPump = 70
     let damageFlamethrower = 60
-    let damageEmber = 20
+    let damageEmber = 25
 
     
     //Bubble
@@ -181,7 +181,7 @@ function mouseClicked(){
         flamethrowerPP--;
     //ember
     }else if (chosenAttack == enemyAttacks[2] && health2>0){
-       if (accuracyEmber<=7){
+       if (accuracyEmber<=8){
            health = health - damageEmber;
            charmanderText = "Charmander used Ember, shooting a quick, small fireball towards his opponent, dealing " + damageEmber + " damage to Squirtle."
        }else {
@@ -224,3 +224,5 @@ function mouseClicked(){
 
 
 //add way to restart, like click to play again
+//make it so when Charmander runs out of PP he won't use that move anymore
+//fix bleeding health bars
